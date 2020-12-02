@@ -57,7 +57,7 @@
         <form class="form-inline my-2 my-lg-0">
           <div class="text-primary text-center ">
             <i class="fas fa-shopping-cart fa-2x text-primary"></i>
-            <span class="text-primary">10</span>
+            <span class="text-primary " id="cantidad-productos-carro"></span>
           </div>
           <button class="btn btn-primary ml-3 my-2 my-sm-0" type="button">Ver Carro</button>
         </form>
@@ -74,11 +74,8 @@
                 <span class="section-heading-upper">Visitanos!</span>
                 <span class="section-heading-lower">Estamos atendiendo!</span>
               </h2>
-              <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
-                <li class="list-unstyled-item list-hours-item d-flex">
-                  Lunes
-                  <span class="ml-auto">07:00 hrs a 21:00 hrs</span>
-                </li>
+              <ul class="list-unstyled list-hours mb-5 text-left mx-auto ul-horarios">
+           
               </ul>
               <p class="address mb-5">
                 <em>
@@ -131,12 +128,9 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Script to highlight the active date in the hours list -->
-    <script>
-      $('.list-hours li').eq(new Date().getDay()).addClass('today');
-    </script>
-
+    <script src="js/carro.js"></script>
+    <script src="js/datos_horarios.js"></script>
+    <script src="js/horarios.js"></script>
   </body>
 
 </html>
