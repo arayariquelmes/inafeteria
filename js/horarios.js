@@ -1,7 +1,9 @@
 
-window.addEventListener("DOMContentLoaded", ()=>{
+window.addEventListener("DOMContentLoaded", async ()=>{
     const ulHorarios = document.querySelector(".ul-horarios");
-    window.horarios.forEach(h=>{
+    let resp = await axios.get("http://localhost:8080/api/horarios/get.php");
+    let horarios = resp.data;
+    horarios.forEach(h=>{
         let horarioLi = document.createElement("li");
         if(h.nro == new Date().getDay()){
             horarioLi.classList.add("text-primary");

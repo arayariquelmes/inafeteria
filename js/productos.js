@@ -9,10 +9,12 @@ window.agregarAlCarro = function(){
     localStorage.setItem("productos", JSON.stringify(productos));
     window.actualizarCarro();
 };
-window.addEventListener("DOMContentLoaded", ()=>{
+window.addEventListener("DOMContentLoaded", async ()=>{
     const moldeProducto = document.querySelector("#moldes > .molde-producto");
     const contenedorProductos = document.querySelector("#contenedor-productos");
-    window.productos.forEach(p=>{
+    let resp = await axios.get("http://localhost:8080/api/productos/get.php");
+    let productos = resp.data;
+    productos.forEach(p=>{
         let nuevoProd = moldeProducto.cloneNode(true);
         nuevoProd.querySelector(".titulo-cafe-span").innerText= p.nombre;
         nuevoProd.querySelector(".precio-cafe-span").innerText = numeral(p.precio).format('$0,0');
