@@ -38,18 +38,18 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item <?php $activa == "home"? "active": "" ?> px-lg-4">
+          <li class="nav-item <?php echo $activa == "home"? "active": "" ?> px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="index.php">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
-          <li class="nav-item  <?php $activa == "nosotros"? "active": "" ?> px-lg-4">
+          <li class="nav-item  <?php echo $activa == "nosotros"? "active": "" ?> px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="about.php">Sobre Nosotros</a>
           </li>
-          <li class="nav-item  <?php $activa == "productos"? "active": "" ?> px-lg-4">
+          <li class="nav-item  <?php echo $activa == "productos"? "active": "" ?> px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="products.php">Nuestros Productos</a>
           </li>
-          <li class="nav-item  <?php $activa == "locales"? "active": "" ?> px-lg-4">
+          <li class="nav-item  <?php echo $activa == "locales"? "active": "" ?> px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="store.php">Locales</a>
           </li>
         </ul>
