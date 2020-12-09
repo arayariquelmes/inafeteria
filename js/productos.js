@@ -8,6 +8,9 @@ window.agregarAlCarro = function(){
 
     localStorage.setItem("productos", JSON.stringify(productos));
     window.actualizarCarro();
+    toastr.info("Producto agregado al carro!");
+    this.classList.remove('btn-primary');
+    this.classList.add('btn-info');
 };
 window.addEventListener("DOMContentLoaded", async ()=>{
     const moldeProducto = document.querySelector("#moldes > .molde-producto");

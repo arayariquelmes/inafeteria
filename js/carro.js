@@ -5,6 +5,7 @@ window.actualizarCarro = function(){
     } else{
         productos = [];
     }
+    
     document.querySelector("#cantidad-productos-carro").innerText = productos.length;
 };
 window.addEventListener('DOMContentLoaded', ()=>{

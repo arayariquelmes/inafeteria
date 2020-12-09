@@ -17,6 +17,7 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
   <link rel="stylesheet" href="vendor/fontawesome-free-5.15.1-web/css/all.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" >
   <!-- Custom styles for this template -->
   <link href="css/business-casual.min.css" rel="stylesheet">
 
@@ -26,7 +27,7 @@
 
   <h1 class="site-heading text-center text-white d-none d-lg-block">
     <span class="site-heading-upper text-primary mb-3">Diseño Web & Mobile</span>
-    <span class="site-heading-lower">INAFETERIA</span>
+    <span class="site-heading-lower">Dinafé Interactivo</span>
   </h1>
 
   <!-- Navigation -->
